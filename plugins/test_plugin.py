@@ -9,7 +9,7 @@ class TestPlugin(Plugin):
         super(TestPlugin, self).__init__()
 
     def init_commands(self):
-        return [Command(re.compile("Test"), self.test)]
+        return [Command(re.compile("do you understand me"), self.test)]
 
     def test(self, command_text):
         print 1
